@@ -1,4 +1,5 @@
 spring:
+<<<<<<< HEAD
  datasource:
    url: jdbc:postgresql://localhost:5432/karol
    username: karol
@@ -6,3 +7,20 @@ spring:
  jpa:
     hibernate:
       ddl-auto: update
+=======
+  datasource:
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  profiles:
+    active:
+    - dev
+>>>>>>> 10101a7a9e74dccddcb7d591ea0bb0ff3666804a
