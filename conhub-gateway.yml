@@ -15,5 +15,5 @@ zuul:
      sensitive-headers:
      serviceId: conhub-auth-server
     conhub-user-service:
-     path: "/users**"
+     path: "/users/**"
      serviceId: conhub-user-service
