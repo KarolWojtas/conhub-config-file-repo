@@ -12,4 +12,4 @@ zuul:
     conhub-auth-server:
      path: "/uaa/**"
      sensitive-headers:
-     serviceId: forward:conhub-auth-server
+     serviceId: conhub-auth-server
