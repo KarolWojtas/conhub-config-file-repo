@@ -1,7 +1,7 @@
 spring:
  datasource:
    url: jdbc:postgresql://localhost:5433/conhub
-   username: karol
+   username: postgres
    password: password
    driver-class-name: org.postgresql.Driver
  jpa:
