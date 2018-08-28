@@ -5,8 +5,8 @@ eureka:
 
 spring:
  datasource:
-   url: jdbc:postgresql://localhost:5432/karol
-   username: karol
+   url: jdbc:postgresql://localhost:5433/conhub
+   username: postgres
    password: password
    driver-class-name: org.postgresql.Driver
  jpa:
