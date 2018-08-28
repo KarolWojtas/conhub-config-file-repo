@@ -1,0 +1,4 @@
+eureka:
+  client:
+    service-url:
+      defaulZone: http://${EUREKA_SERVER_HOST:localhost}:8761
