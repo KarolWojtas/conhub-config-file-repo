@@ -4,3 +4,11 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: http://${EUREKA_SERVER_HOST:localhost}:8761/eureka
+zuul:
+  sensitive-headers:
+  - Cookie
+  - Set-Cookie
+  routes:
+    conhub-auth-server:
+     path: "/uaa/**"
+     serviceId: conhub-auth-server
