@@ -14,3 +14,6 @@ zuul:
      path: "/uaa/**"
      sensitive-headers:
      serviceId: conhub-auth-server
+    conhub-user-service:
+     path: "/users**"
+     serviceId: conhub-user-service
